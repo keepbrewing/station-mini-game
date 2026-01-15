@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Station Mini Game</title>
+
+  <!-- Phaser -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div id="top-bar">
+    <span>Move: Arrow Keys / WASD</span>
+    <span>Interact: E,</span>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div id="layout">
+
+    <!-- LEFT PANEL -->
+    <div id="left-panel">
+      <h3>Required Items</h3>
+      <div class="item-card" id="item-token">
+        <img src = "./assets/token.gif" id="token-gif" />
+      </div>
+      <div class="item-card" id="item-food">
+        <img src = "./assets/burger.png" id="food" />
+      </div>
+      <div class="item-card" id="item-drink">
+        <img src = "./assets/coke.png" id="drink" />
+      </div>
+    </div>
+
+    <!-- GAME CANVAS -->
+    <div id="game-container"></div>
+
+    <!-- RIGHT PANEL -->
+    <div id="right-panel">
+      <h3>Other Games</h3>
+      <p>(Coming Soon)</p>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div id="bottom-bar">
+    <span id="timer">Time: 02:00</span>
+  </div>
+
+  <!-- INSTRUCTION MODAL -->
+  <div id="instruction-modal">
+    <div class="modal-content">
+      <h2>Instructions</h2>
+      <p>
+        You are running late for a train.<br>
+        Collect required items and reach the platform in time.
+      </p>
+      <button id="start-button">Start</button>
+    </div>
+  </div>
+
+  <div id="end-modal" class="hidden">
+    <div class="modal-content">
+      <h2>Thanks for playing!</h2>
+      <button id = "download-csv">Download Session CSV</button>
+    </div>
+  </div>
+
+  <!-- MAIN SCRIPT -->
+  <script type="module" src="main.js"></script>
+
+</body>
+</html>
