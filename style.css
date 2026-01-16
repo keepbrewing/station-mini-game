@@ -4,23 +4,25 @@ html, body {
 
 body {
   margin: 0;
-  background: #1b0d12;
-  color: #e6cbd5;
+  background: #e1aea4;
+  color: #684971;
   display: flex;
   flex-direction: column;
   font-family: 'VT323', monospace;
   letter-spacing: 1px;
+  font-size: larger;
+  font-weight: 400;
 }
 
 #top-bar, #bottom-bar {
-  background: #3a0f23;
+  background: #ffecb2;
   padding: 8px;
   text-align: center;
-  border-bottom: 2px solid #6b1f3a;
+  border-bottom: 5px solid #6b1f3a;
 }
 
 #bottom-bar {
-  border-top: 2px solid #6b1f3a;
+  border-top: 5px solid #6b1f3a;
   border-bottom: none;
 }
 
@@ -35,8 +37,10 @@ body {
 #left-panel, #right-panel {
   width: 160px;
   padding: 12px;
-  background: #3a0f23;
-  border: 2px solid #6b1f3a;
+  margin: 10px;
+  background: #ffecb2;
+  border: 5px solid #6b1f3a;
+  border-radius: 5%;
   opacity: 0.85;
 }
 
@@ -48,12 +52,13 @@ body {
 }
 
 .item-card {
-  background: #1b0d12;
-  border: 1px solid #6b1f3a;
+  background: #f9d8a1;
+  border: 5px solid #a06389;
   padding: 8px;
   margin: 8px 0;
   text-align: center;
   transition: opacity 0.4s ease;
+  border-radius: 5%;
 }
 
 .item-card.collected {
@@ -71,21 +76,24 @@ body {
 }
 
 .modal-content {
-  background: #3a0f23;
-  border: 2px solid #c73a5f;
+  background: #ffecb2;
+  border: 5px solid #a06389;
+  color: #684971;
   padding: 24px;
   text-align: center;
   max-width: 400px;
+  border-radius: 5%;
 }
 
 #start-button {
   margin-top: 16px;
   padding: 8px 16px;
-  background: #c73a5f;
+  background: #a06389;
   border: none;
-  color: #1b0d12;
+  color: #ffecb2;
   cursor: pointer;
   font-family: inherit;
+  font-size: large;
 }
 
 #item-token img {
@@ -114,9 +122,9 @@ body {
 #download-csv {
   margin-top: 16px;
   padding: 10px 18px;
-  background: #c73a5f;
+  background: #a06389;
   border: none;
-  color: #1b0d12;
+  color: #684971;
   font-family: inherit;
   font-size: 16px;
   cursor: pointer;
